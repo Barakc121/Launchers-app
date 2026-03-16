@@ -1,5 +1,5 @@
 import express from "express";
-import { getall,getone,addone,deleteOne } from "../controllers/launcherControler";
+import { getall,getone,addone,deleteOne } from "../controllers/launcherControler.js";
 
 
 const router = express.Router();
