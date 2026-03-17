@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router";
 import React, { useEffect, useState } from "react";
 import useStore from "../useSrote";
+import './HomePage.css'
+
 
 function HomePage() {
   const { launchers, fetchLaunchers, setSelectLaunchers } = useStore();
@@ -26,10 +28,10 @@ function HomePage() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>ניהול משגרים</h1>
       <h2>{launchers.length} :סה"כ משגרים</h2>
-      <div>
+      <div className="user-table">
         <input
           placeholder="חיפוש לפי עיר"
           value={citySearch}

@@ -1,0 +1,65 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.user-form {
+    border: 1px solid #c3b0b0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.user-form input {
+    margin: 5px;
+    padding: 8px;
+    width: 200px;
+}
+
+.user-form select {
+    margin: 5px;
+    padding: 8px;
+    width: 200px;
+}
+
+.user-form button {
+    padding: 8px 15px;
+    background-color: azure;
+    color: beige;
+    border: none;
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th,td{
+border: 1px solid rgb(164, 188, 188);
+}
+
+th ,td{
+    padding: 10px;
+    text-align: right;
+}
+
+th{
+    background-color: #c3b0b0;
+}
+
+.btn-delete{
+    background-color: red;
+    color: white;
+    border: black 1px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-delete :hover{
+    background-color: beige;
+}

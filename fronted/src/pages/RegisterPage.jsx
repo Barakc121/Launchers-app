@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import useStore from "../useSrote";
+import './RegisterPage.css'
 
 function RegisterPage() {
   const { registerUser, deleteUser, users, fetchAllUsers } = useStore();
@@ -26,7 +27,7 @@ function RegisterPage() {
   return (
     <div>
       <h1>ניהול משתמשים</h1>
-      <form onSubmit={handleSubmit}>
+      <form  className="user-form" onSubmit={handleSubmit}>
         {/* שם משתמש */}
         <input
           type="text"
@@ -67,7 +68,7 @@ function RegisterPage() {
       </form>
       {/* <hr /> */}
 
-      <table>
+      <table className="user-table">
         <thead>
           <tr>
             <th>שם משתמש</th>
@@ -84,7 +85,7 @@ function RegisterPage() {
                   <td>{u.email}</td>
                   <td>{u.user_type}</td>
                   <td>
-                    <button onClick={() => deleteUser(u._id)}>מחק</button>
+                    <button className="btn-delete" onClick={() => deleteUser(u._id)}>מחק</button>
                   </td>
                 </tr>
               ))
