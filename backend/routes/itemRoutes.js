@@ -3,7 +3,6 @@ import { getall,getone,addone,deleteOne } from "../controllers/launcherControler
 
 
 const router = express.Router();
-
 // מביא לי את כל הנתונים שהכנסתי לו
 router.get("/", getall);
 
