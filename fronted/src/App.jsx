@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="app">
       <nav className="navbar">
-        <Link to="/">Home Page     </Link> 
-        <Link to="/add">|     Add Launcher</Link>
-        <Link to="/details"> |          PageDetailsLauncher</Link>
+        <Link to="/">Home Page</Link> |
+        <Link to="/add">Add Launcher</Link>|
+        <Link to="/details"> PageDetailsLauncher</Link>
 
       </nav>
 

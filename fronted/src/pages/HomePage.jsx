@@ -13,7 +13,9 @@ function HomePage() {
   }, []);
 
   const filteredLaunchers = launchers.filter((l) => {
-    const matchesCity = l.city?.toLowerCase().includes(citySearch.toLowerCase());
+    const matchesCity = l.city
+      ?.toLowerCase()
+      .includes(citySearch.toLowerCase());
     const matchesType = typeFilter === "" || l.rocketType === typeFilter;
     return matchesCity && matchesType;
   });
@@ -26,15 +28,18 @@ function HomePage() {
   return (
     <div>
       <h1>ניהול משגרים</h1>
-
+      <h2>{launchers.length} :סה"כ משגרים</h2>
       <div>
         <input
           placeholder="חיפוש לפי עיר"
           value={citySearch}
           onChange={(e) => setCitySearch(e.target.value)}
         />
-        
-        <select value={typeFilter} onChange={(e) => setTypeFilter(e.target.value)}>
+
+        <select
+          value={typeFilter}
+          onChange={(e) => setTypeFilter(e.target.value)}
+        >
           <option value="">סינון לפי סוג</option>
           <option value="Shahab3">Shahab3</option>
           <option value="Fetah110">Fetah110</option>
@@ -45,7 +50,7 @@ function HomePage() {
 
       <div className="list">
         {filteredLaunchers.map((l) => (
-          <div key={l._id} >
+          <div key={l._id}>
             <h3>{l.name}</h3>
             <p>עיר: {l.city}</p>
             <p> {l.rocketType} :סוג</p>

@@ -20,7 +20,7 @@ function PageDetailsLauncher() {
   return (
     <div className="details-page">
       <h1>פרטי משגר: {selectedLauncher.name}</h1>
-      <hr />
+      
       <p><strong>סוג רקטה:</strong> {selectedLauncher.rocketType}</p>
       <p><strong>עיר:</strong> {selectedLauncher.city}</p>
       <p><strong>נקודת רוחב:</strong> {selectedLauncher.latitude}</p>
